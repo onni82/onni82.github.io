@@ -15,7 +15,7 @@ const App = () => {
 	return (
 		<>
 			<EasterEggModal />
-			<Router basename="/dynamisk_sida">
+			<Router basename="/onniserver">
 				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
