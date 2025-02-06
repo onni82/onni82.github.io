@@ -14,7 +14,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
 		return {
 			//build specific config
 			plugins: [react()],
-			base: '/onniserver/',
+			base: '/',
 			build: {
 				rollupOptions: {
 					input: {
