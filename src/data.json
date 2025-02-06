@@ -1,0 +1,85 @@
+{
+	"certifications": [
+		{
+			"id": 1,
+			"software": "Avid Pro Tools",
+			"description": "Certified User - version 2020 and version 12.8"
+		}
+	],
+	"education": [
+		{
+			"id": 1,
+			"school": "Chas Academy",
+			"period": "Sep 2024 - Present",
+			"schoolType": "Vocational University",
+			"course": ".NET Full Stack Web Development",
+			"location": "Stockholm, Sweden"
+		},
+		{
+			"id": 2,
+			"school": "Iris Hadar",
+			"period": "Apr 2024 - June 2024",
+			"schoolType": "Municipal Adult Education",
+			"course": "Web development 1",
+			"location": "Remote course (Sweden)"
+		},
+		{
+			"id": 3,
+			"school": "Iris Hadar",
+			"period": "Nov 2023 - Jan 2024",
+			"schoolType": "Municipal Adult Education",
+			"course": "Mathematics 2a",
+			"location": "Remote course (Sweden)"
+		},
+		{
+			"id": 4,
+			"school": "Iris Hadar",
+			"period": "July 2023 - Sep 2023",
+			"schoolType": "Municipal Adult Education",
+			"course": "Programming 1 (C++)",
+			"location": "Remote course (Sweden)"
+		},
+		{
+			"id": 5,
+			"school": "Be Licensed",
+			"period": "Feb 2022 - Mar 2022",
+			"schoolType": "Vocational Training",
+			"course": "Video Production",
+			"location": "Remote course (Sweden)"
+		},
+		{
+			"id": 6,
+			"school": "Be Licensed",
+			"period": "Dec 2021 - Jan 2022",
+			"schoolType": "Vocational Training",
+			"course": "Audio Production",
+			"location": "Remote course (Sweden)"
+		},
+		{
+			"id": 7,
+			"school": "Dalarna University",
+			"period": "2018 - 2021",
+			"schoolType": "Bachelor of Science",
+			"course": "Sound and Music Production",
+			"location": "Falun, Sweden"
+		}
+	],
+	"work": [
+		{
+			"id": 1,
+			"employer": "Securitas Sverige AB",
+			"period": "April 2022 - Present",
+			"title": "Security Guard",
+			"description": "Full-time contract as a security guard. On behalf of Securitas, I patrol several buildings at one of their clients' sites in Södertälje.<br/>This also includes report writing and getting called out on fire and emergency alarms, as well as working as a receptionist and escort when needed.",
+			"location": "Södertälje, Sweden"
+		},
+		{
+			"id": 2,
+			"employer": "Mind Proxy AB",
+			"period": "June 2023 - Sept 2023",
+			"title": "Supervisor and Administrator",
+			"description": "Part-time work that consisted of making time reports, assistance with daily life planning, planning trips and pay out workers' wages.",
+			"location": "Norberg, Sweden (Remote)"
+		}
+	]
+}
