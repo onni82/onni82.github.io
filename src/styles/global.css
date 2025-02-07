@@ -23,6 +23,8 @@ body {
 	min-width: 320px;
 	background-color: rgb(231, 255, 240);
 	background-size: 100% auto;
+	display: flex;
+	flex-direction: column;
 }
 
 /* div and #box-content */
@@ -122,6 +124,7 @@ footer>a {
 /* main element div and section content */
 main {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	gap: 20px;
 	padding: 0 2%;
