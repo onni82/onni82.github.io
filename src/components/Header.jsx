@@ -15,19 +15,19 @@ const Header = ({ menuOpen, setMenuOpen, menuClose }) => {
 			<nav id="menu" className={menuOpen ? "open" : ""}>
 				<ul>
 					<li>
-						<Link className="clickable" to="/" aria-current={location.pathname === "/" ? "page" : undefined} onClick={menuClose}>Home</Link>
+						<Link to="/" aria-current={location.pathname === "/" ? "page" : undefined} onClick={menuClose}>Home</Link>
 					</li>
 					<li>
-						<Link className="clickable" to="/work" aria-current={location.pathname === "/work" ? "page" : undefined} onClick={menuClose}>Work</Link>
+						<Link to="/work" aria-current={location.pathname === "/work" ? "page" : undefined} onClick={menuClose}>Work</Link>
 					</li>
 					<li>
-						<Link className="clickable" to="/coding" aria-current={location.pathname === "/coding" ? "page" : undefined} onClick={menuClose}>Coding</Link>
+						<Link to="/coding" aria-current={location.pathname === "/coding" ? "page" : undefined} onClick={menuClose}>Coding</Link>
 					</li>
 					<li>
-						<Link className="clickable" to="/education" aria-current={location.pathname === "/education" ? "page" : undefined} onClick={menuClose}>Education</Link>
+						<Link to="/education" aria-current={location.pathname === "/education" ? "page" : undefined} onClick={menuClose}>Education</Link>
 					</li>
 					<li>
-						<Link className="clickable" to="/skills" aria-current={location.pathname === "/skills" ? "page" : undefined} onClick={menuClose}>Skills</Link>
+						<Link to="/skills" aria-current={location.pathname === "/skills" ? "page" : undefined} onClick={menuClose}>Skills</Link>
 					</li>
 				</ul>
 			</nav>

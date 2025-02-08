@@ -21,7 +21,7 @@ const Footer = ({ menuClose }) => {
 					Onni Bucht
 				</span>
 			</p>
-			<Link className="clickable" to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined} onClick={menuClose}>Contact</Link>
+			<Link to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined} onClick={menuClose}>Contact</Link>
 		</footer>
 	);
 };
