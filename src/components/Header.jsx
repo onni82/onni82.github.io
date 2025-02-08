@@ -1,18 +1,10 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ menuOpen, setMenuOpen, closeMenu }) => {
 	const location = useLocation();
-	const [menuOpen, setMenuOpen] = useState(false);
-
-	const toggleMenu = () => {
-		setMenuOpen((prev) => !prev);
-	};
-
-	const closeMenu = () => {
-		setMenuOpen(false);
-	};
+	const toggleMenu = () => setMenuOpen((prev) => !prev);
 
 	return (
 		<header>

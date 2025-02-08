@@ -1,20 +1,14 @@
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ closeMenu }) => {
 	const location = useLocation();
 	const [isClicked, setIsClicked] = useState(false);
-
 	const handleEasterEggClick = () => {
 		setIsClicked(!isClicked);
 		document.body.style.backgroundColor = isClicked ? "" : "lightblue";
 	}
-
-	const closeMenu = () => {
-		const menu = document.getElementById("menu");
-		if (menu) menu.classList.remove("open");
-	};
 
 	return (
 		<footer id="footer">

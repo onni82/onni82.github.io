@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Coding from "./pages/Coding.jsx";
@@ -12,11 +12,14 @@ import Footer from './components/Footer.jsx';
 import EasterEggModal from "./components/EasterEggModal.jsx";
 
 const App = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
+	const closeMenu = () => setMenuOpen(false);
+
 	return (
 		<>
 			<EasterEggModal />
 			<Router>
-				<Header />
+				<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} closeMenu={closeMenu} />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/coding" element={<Coding />} />
@@ -26,7 +29,7 @@ const App = () => {
 					<Route path="/work" element={<Work />} />
 					<Route path="/*" element={<PageNotFound />} />
 				</Routes>
-				<Footer />
+				<Footer closeMenu={closeMenu} />
 			</Router>
 		</>
 	);
