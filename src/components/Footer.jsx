@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Footer = ({ closeMenu }) => {
+const Footer = ({ menuClose }) => {
 	const location = useLocation();
 	const [isClicked, setIsClicked] = useState(false);
 	const handleEasterEggClick = () => {
@@ -21,7 +21,7 @@ const Footer = ({ closeMenu }) => {
 					Onni Bucht
 				</span>
 			</p>
-			<Link className="clickable" to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined} onClick={closeMenu}>Contact</Link>
+			<Link className="clickable" to="/contact" aria-current={location.pathname === "/contact" ? "page" : undefined} onClick={menuClose}>Contact</Link>
 		</footer>
 	);
 };

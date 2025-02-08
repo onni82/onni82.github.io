@@ -13,13 +13,13 @@ import EasterEggModal from "./components/EasterEggModal.jsx";
 
 const App = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
-	const closeMenu = () => setMenuOpen(false);
+	const menuClose = () => setMenuOpen(false);
 
 	return (
 		<>
 			<EasterEggModal />
 			<Router>
-				<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} closeMenu={closeMenu} />
+				<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} menuClose={menuClose} />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/coding" element={<Coding />} />
@@ -29,7 +29,7 @@ const App = () => {
 					<Route path="/work" element={<Work />} />
 					<Route path="/*" element={<PageNotFound />} />
 				</Routes>
-				<Footer closeMenu={closeMenu} />
+				<Footer menuClose={menuClose} />
 			</Router>
 		</>
 	);

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const Header = ({ menuOpen, setMenuOpen, closeMenu }) => {
+const Header = ({ menuOpen, setMenuOpen, menuClose }) => {
 	const location = useLocation();
 	const toggleMenu = () => setMenuOpen((prev) => !prev);
 
@@ -15,19 +15,19 @@ const Header = ({ menuOpen, setMenuOpen, closeMenu }) => {
 			<nav id="menu" className={menuOpen ? "open" : ""}>
 				<ul>
 					<li>
-						<Link className="clickable" to="/" aria-current={location.pathname === "/" ? "page" : undefined} onClick={closeMenu}>Home</Link>
+						<Link className="clickable" to="/" aria-current={location.pathname === "/" ? "page" : undefined} onClick={menuClose}>Home</Link>
 					</li>
 					<li>
-						<Link className="clickable" to="/work" aria-current={location.pathname === "/work" ? "page" : undefined} onClick={closeMenu}>Work</Link>
+						<Link className="clickable" to="/work" aria-current={location.pathname === "/work" ? "page" : undefined} onClick={menuClose}>Work</Link>
 					</li>
 					<li>
-						<Link className="clickable" to="/coding" aria-current={location.pathname === "/coding" ? "page" : undefined} onClick={closeMenu}>Coding</Link>
+						<Link className="clickable" to="/coding" aria-current={location.pathname === "/coding" ? "page" : undefined} onClick={menuClose}>Coding</Link>
 					</li>
 					<li>
-						<Link className="clickable" to="/education" aria-current={location.pathname === "/education" ? "page" : undefined} onClick={closeMenu}>Education</Link>
+						<Link className="clickable" to="/education" aria-current={location.pathname === "/education" ? "page" : undefined} onClick={menuClose}>Education</Link>
 					</li>
 					<li>
-						<Link className="clickable" to="/skills" aria-current={location.pathname === "/skills" ? "page" : undefined} onClick={closeMenu}>Skills</Link>
+						<Link className="clickable" to="/skills" aria-current={location.pathname === "/skills" ? "page" : undefined} onClick={menuClose}>Skills</Link>
 					</li>
 				</ul>
 			</nav>
