@@ -1,14 +1,24 @@
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router";
 
 const Header = () => {
 	const location = useLocation();
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setMenuOpen((prev) => !prev);
+	};
+
+	const closeMenu = () => {
+		setMenuOpen(false);
+	};
 
 	return (
 		<header>
 			<div>
 				<Link to="/" aria-label="Home" id="header-logo"></Link>
-				<span aria-label="Menu" id="menu-icon">&#9776;</span>
+				<span aria-label="Menu" id="menu-icon" onClick={toggleMenu} className={menuOpen ? "open" : ""}>&#9776;</span>
 			</div>
 			<nav id="menu">
 				<ul>
