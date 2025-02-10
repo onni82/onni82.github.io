@@ -88,10 +88,14 @@ header ul li {
 		font-size: 1.5rem;
 	}
 	nav#menu {
-		display: none;
+		/* display: none; */
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.5s ease-in-out;
 	}
 	nav#menu.open {
-		display: block;
+		max-height: 100%;
+		/* display: block; */
 		top: 0;
 		left: 0;
 		width: 100%;
