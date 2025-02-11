@@ -12,7 +12,7 @@
 			"school": "Chas Academy",
 			"period": "Sep 2024 - Present",
 			"schoolType": "Vocational University",
-			"course": ".NET Full Stack Web Development",
+			"course": ".NET Full Stack Development",
 			"location": "Stockholm, Sweden"
 		},
 		{
@@ -20,7 +20,7 @@
 			"school": "Iris Hadar",
 			"period": "Apr 2024 - June 2024",
 			"schoolType": "Municipal Adult Education",
-			"course": "Web development 1",
+			"course": "Web Development 1",
 			"location": "Remote course (Sweden)"
 		},
 		{
@@ -80,6 +80,14 @@
 			"title": "Supervisor and Administrator",
 			"description": "Part-time work that consisted of making time reports, assistance with daily life planning, planning trips and pay out workers' wages.",
 			"location": "Norberg, Sweden (Remote)"
+		},
+		{
+			"id": 3,
+			"employer": "Sylvelin Måkestad",
+			"period": "April 2022 - June 2022",
+			"title": "Web Development Intern",
+			"description": "An internship that involved creating a website for a film project. The task consisted of coding HTML, CSS and JavaScript with constant updating of the website after receiving feedback.",
+			"location": "Stockholm, Sweden"
 		}
 	]
 }
