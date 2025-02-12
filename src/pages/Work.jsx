@@ -1,25 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import data from '../data.json';
 
 const Work = () => {
-	// const [data, setData] = useState([]);
-	// const [loading, setLoading] = useState(true);
-
-	// useEffect(() => {
-	// 	fetch('https://onni82.github.io/dynamisk_sida/data.json')
-	// 		.then((response) => response.json())
-	// 		.then((jsonData) => {
-	// 			setData(jsonData);
-	// 			setLoading(false);
-	// 		})
-	// 		.catch((error) => {
-	// 			console.error('Error fetching data:', error);
-	// 			setLoading(false);
-	// 		});
-	// }, []);
-
-	// if (loading) return <main><p>Loading data</p></main>;
-
 	return (
 		<main>
 			<h1>Work Experience</h1>

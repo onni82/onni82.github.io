@@ -3,9 +3,6 @@ import { FaGithub } from "react-icons/fa";
 import languageIcons from "../utils/languageIcons";
 
 const Coding = () => {
-	// useEffect(function() {
-	// 	document.title = "Coding";
-	// }, []);
 	const [repos, setRepos] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const username = "onni82";
