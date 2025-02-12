@@ -1,5 +1,4 @@
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Header = ({ menuOpen, setMenuOpen, menuClose }) => {
 	const location = useLocation();
@@ -14,19 +13,19 @@ const Header = ({ menuOpen, setMenuOpen, menuClose }) => {
 			<nav id="menu" className={menuOpen ? "open" : ""}>
 				<ul>
 					<li>
-						<Link to="/" aria-current={location.pathname === "/" ? "page" : undefined} onClick={menuClose}>Home</Link>
+						<NavLink to="/" onClick={menuClose}>Home</NavLink>
 					</li>
 					<li>
-						<Link to="/work" aria-current={location.pathname === "/work" ? "page" : undefined} onClick={menuClose}>Work</Link>
+						<NavLink to="/work" onClick={menuClose}>Work</NavLink>
 					</li>
 					<li>
-						<Link to="/coding" aria-current={location.pathname === "/coding" ? "page" : undefined} onClick={menuClose}>Coding</Link>
+						<NavLink to="/coding" onClick={menuClose}>Coding</NavLink>
 					</li>
 					<li>
-						<Link to="/education" aria-current={location.pathname === "/education" ? "page" : undefined} onClick={menuClose}>Education</Link>
+						<NavLink to="/education" onClick={menuClose}>Education</NavLink>
 					</li>
 					<li>
-						<Link to="/skills" aria-current={location.pathname === "/skills" ? "page" : undefined} onClick={menuClose}>Skills</Link>
+						<NavLink to="/skills" onClick={menuClose}>Skills</NavLink>
 					</li>
 				</ul>
 			</nav>
