@@ -10,7 +10,14 @@ const Work = () => {
 					<section key={work.id}>
 						<p className="sub-category">{work.employer}</p>
 						<p>{work.period} - {work.title}</p>
-						<p dangerouslySetInnerHTML={{ __html: work.description }} />
+						<p>
+							{work.description.split('\n').map((line, index, arr) => (
+								<React.Fragment key={index}>
+									{line}
+									{index < arr.length - 1 && <br />}
+								</React.Fragment>
+							))}
+						</p>
 						<p>{work.location}</p>
 					</section>
 				))}
