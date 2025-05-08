@@ -94,19 +94,19 @@
 		{
 			"id": 1,
 			"sub_category": "Media Skills",
-			"description": "Music writing, lyric writing, audio engineering &amp; music production"
+			"description": "Music writing, lyric writing, audio engineering & music production"
 		},
 		{
 			"id": 2,
 			"sub_category": "Languages",
-			"description": "English, Swedish &amp; some Korean"
+			"description": "English, Swedish & some Korean"
 		}
 	],
 	"tools": [
 		{
 			"id": 1,
 			"sub_category": "Operating Systems",
-			"description": "Windows, macOS, Ubuntu (Desktop &amp; Server)"
+			"description": "Windows, macOS, Ubuntu (Desktop & Server)"
 		},
 		{
 			"id": 2,
