@@ -19,7 +19,6 @@ const Footer = ({ menuClose }) => {
 					Onni Bucht
 				</span>
 			</p>
-			<NavLink to="/contact" onClick={menuClose}>Contact</NavLink>
 		</footer>
 	);
 };

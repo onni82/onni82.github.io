@@ -26,6 +26,9 @@ const Header = ({ menuOpen, setMenuOpen, menuClose }) => {
 					<li>
 						<NavLink to="/skills" onClick={menuClose}>Skills</NavLink>
 					</li>
+					<li>
+						<NavLink to="/contact" onClick={menuClose}>Contact</NavLink>
+					</li>
 				</ul>
 			</nav>
 		</header>
