@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Coding from "./pages/Coding.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -18,7 +18,7 @@ const App = () => {
 	return (
 		<>
 			<EasterEggModal />
-			<Router>
+			<BrowserRouter>
 				<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} menuClose={menuClose} />
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -30,7 +30,7 @@ const App = () => {
 					<Route path="/*" element={<PageNotFound />} />
 				</Routes>
 				<Footer menuClose={menuClose} />
-			</Router>
+			</BrowserRouter>
 		</>
 	);
 };
