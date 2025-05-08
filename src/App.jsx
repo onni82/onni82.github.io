@@ -31,7 +31,7 @@ const App = () => {
 						<Route path="/*" element={<PageNotFound />} />
 					</Routes>
 				</main>
-				<Footer menuClose={menuClose} />
+				<Footer />
 			</BrowserRouter>
 		</>
 	);

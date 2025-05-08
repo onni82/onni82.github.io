@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
-const Footer = ({ menuClose }) => {
+const Footer = () => {
 	const [isClicked, setIsClicked] = useState(false);
 	const handleEasterEggClick = () => {
 		setIsClicked(!isClicked);
