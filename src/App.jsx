@@ -20,15 +20,17 @@ const App = () => {
 			<EasterEggModal />
 			<BrowserRouter>
 				<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} menuClose={menuClose} />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/coding" element={<Coding />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/education" element={<Education />} />
-					<Route path="/skills" element={<Skills />} />
-					<Route path="/work" element={<Work />} />
-					<Route path="/*" element={<PageNotFound />} />
-				</Routes>
+				<main>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/coding" element={<Coding />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route path="/education" element={<Education />} />
+						<Route path="/skills" element={<Skills />} />
+						<Route path="/work" element={<Work />} />
+						<Route path="/*" element={<PageNotFound />} />
+					</Routes>
+				</main>
 				<Footer menuClose={menuClose} />
 			</BrowserRouter>
 		</>

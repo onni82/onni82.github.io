@@ -3,7 +3,7 @@ import data from '../data.json';
 
 const Work = () => {
 	return (
-		<main>
+		<>
 			<h1>Work Experience</h1>
 			<div>
 				{data.work.map((work) => (
@@ -15,7 +15,7 @@ const Work = () => {
 					</section>
 				))}
 			</div>
-		</main>
+		</>
 	);
 };
 

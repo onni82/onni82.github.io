@@ -3,7 +3,7 @@ import squareprofile from "../images/squareprofile.jpg";
 
 const Home = () => {
 	return (
-		<main>
+		<>
 			<h1>This is Onni Bucht</h1>
 			<div>
 				<section>
@@ -18,7 +18,7 @@ const Home = () => {
 					<p>Have taken courses in <span className="bold-text">C++</span>, <span className="bold-text">Japanese</span> and <span className="bold-text">Korean</span>.</p>
 				</section>
 			</div>
-		</main>
+		</>
 	);
 };
 

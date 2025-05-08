@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
 	return (
-		<main>
+		<>
 			<h1>Contact</h1>
 			<div>
 				<section>
@@ -10,7 +10,7 @@ const Contact = () => {
 					<p>Instagram: <a href="https://instagram.com/onni82" target="_blank" rel="noreferrer nofollow">@onni82</a> &amp; <a href="https://instagram.com/onbprod" target="_blank" rel="noreferrer nofollow">@onbprod</a>.</p>
 				</section>
 			</div>
-		</main>
+		</>
 	);
 };
 

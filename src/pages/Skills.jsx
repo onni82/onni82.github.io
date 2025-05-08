@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
 	return (
-		<main>
+		<>
 			<h1>Skills</h1>
 			<div>
 				<section>
@@ -33,7 +33,7 @@ const Skills = () => {
 					<p>Adobe Premiere Pro, Avid Media Composer, Apple Final Cut Pro</p>
 				</section>
 			</div>
-		</main>
+		</>
 	);
 };
 

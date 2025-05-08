@@ -28,7 +28,7 @@ const Coding = () => {
 	if (loading) return <main><p>Loading data</p></main>;
 
 	return (
-		<main>
+		<>
 			<h1>Coding</h1>
 			<div>
 				{repos.map((repo) => (
@@ -40,7 +40,7 @@ const Coding = () => {
 					</section>
 				))}
 			</div>
-		</main>
+		</>
 	);
 };
 
