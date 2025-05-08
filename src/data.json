@@ -89,5 +89,39 @@
 			"description": "An internship that involved creating a website for a film project. The task consisted of coding HTML, CSS and JavaScript with constant updating of the website after receiving feedback.",
 			"location": "Stockholm, Sweden"
 		}
+	],
+	"skills": [
+		{
+			"id": 1,
+			"sub_category": "Media Skills",
+			"description": "Music writing, lyric writing, audio engineering &amp; music production"
+		},
+		{
+			"id": 2,
+			"sub_category": "Languages",
+			"description": "English, Swedish &amp; some Korean"
+		}
+	],
+	"tools": [
+		{
+			"id": 1,
+			"sub_category": "Operating Systems",
+			"description": "Windows, macOS, Ubuntu (Desktop &amp; Server)"
+		},
+		{
+			"id": 2,
+			"sub_category": "Code Editors/IDE",
+			"description": "Visual Studio, Sublime Text, Code::Blocks, Eclipse"
+		},
+		{
+			"id": 3,
+			"sub_category": "Digital Audio Workstations",
+			"description": "Avid Pro Tools, Image-Line FL Studio, Apple Logic Pro"
+		},
+		{
+			"id": 4,
+			"sub_category": "Video Editing Software",
+			"description": "Adobe Premiere Pro, Avid Media Composer, Apple Final Cut Pro"
+		}
 	]
 }
