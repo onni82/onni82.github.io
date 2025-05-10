@@ -1,6 +1,6 @@
 ## Onni Bucht's website
 
-[onniserver.com](https://onniserver.com/)
+[onnibucht.se](https://onnibucht.se/)
 
 ## Resources
 
