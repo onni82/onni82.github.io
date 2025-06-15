@@ -5,3 +5,4 @@
 ## Resources
 
 [Built using React/Vite](https://vite.dev/)
+[Coded in TypeScript](https://www.typescriptlang.org/)
