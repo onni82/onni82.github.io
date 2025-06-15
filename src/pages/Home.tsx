@@ -1,6 +1,7 @@
+import React from "react";
 import squareprofile from "../images/squareprofile.jpg";
 
-const Home = () => {
+const Home: React.FC = () => {
 	return (
 		<>
 			<h1>This is Onni Bucht</h1>

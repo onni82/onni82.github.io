@@ -1,7 +1,7 @@
-import React from 'react';
-import data from '../assets/data.json';
+import React from "react";
+import data from "../assets/data.json";
 
-const Work = () => {
+const Work: React.FC = () => {
 	return (
 		<>
 			<h1>Work Experience</h1>

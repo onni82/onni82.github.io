@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import languageIcons from "../utils/languageIcons";
 
@@ -10,7 +10,7 @@ type GitHubRepo = {
 	html_url: string;
 };
 
-const Coding = () => {
+const Coding: React.FC = () => {
 	const [repos, setRepos] = useState<GitHubRepo[]>([]);
 	const [loading, setLoading] = useState(true);
 	const username = "onni82";
