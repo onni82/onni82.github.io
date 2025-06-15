@@ -55,7 +55,6 @@ const Coding = () => {
 						</section>
 					);
 				})}
-
 			</div>
 		</>
 	);
