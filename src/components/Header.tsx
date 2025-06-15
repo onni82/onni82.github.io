@@ -1,6 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 
-const Header = ({ menuOpen, setMenuOpen, menuClose }) => {
+type HeaderProps = {
+	menuOpen: boolean;
+	setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+	menuClose: () => void;
+};
+
+const Header: React.FC<HeaderProps> = ({ menuOpen, setMenuOpen, menuClose }) => {
 	const toggleMenu = () => setMenuOpen((prev) => !prev);
 
 	return (
@@ -11,24 +17,12 @@ const Header = ({ menuOpen, setMenuOpen, menuClose }) => {
 			</div>
 			<nav id="menu" className={menuOpen ? "open" : ""}>
 				<ul>
-					<li>
-						<NavLink to="/" onClick={menuClose}>Home</NavLink>
-					</li>
-					<li>
-						<NavLink to="/work" onClick={menuClose}>Work</NavLink>
-					</li>
-					<li>
-						<NavLink to="/coding" onClick={menuClose}>Coding</NavLink>
-					</li>
-					<li>
-						<NavLink to="/education" onClick={menuClose}>Education</NavLink>
-					</li>
-					<li>
-						<NavLink to="/skills" onClick={menuClose}>Skills</NavLink>
-					</li>
-					<li>
-						<NavLink to="/contact" onClick={menuClose}>Contact</NavLink>
-					</li>
+					<li><NavLink to="/" onClick={menuClose}>Home</NavLink></li>
+					<li><NavLink to="/work" onClick={menuClose}>Work</NavLink></li>
+					<li><NavLink to="/coding" onClick={menuClose}>Coding</NavLink></li>
+					<li><NavLink to="/education" onClick={menuClose}>Education</NavLink></li>
+					<li><NavLink to="/skills" onClick={menuClose}>Skills</NavLink></li>
+					<li><NavLink to="/contact" onClick={menuClose}>Contact</NavLink></li>
 				</ul>
 			</nav>
 		</header>

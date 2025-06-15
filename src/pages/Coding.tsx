@@ -1,9 +1,17 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import languageIcons from "../utils/languageIcons";
 
+type GitHubRepo = {
+	id: number;
+	name: string;
+	language: string | null;
+	description: string | null;
+	html_url: string;
+};
+
 const Coding = () => {
-	const [repos, setRepos] = useState([]);
+	const [repos, setRepos] = useState<GitHubRepo[]>([]);
 	const [loading, setLoading] = useState(true);
 	const username = "onni82";
 
@@ -25,20 +33,29 @@ const Coding = () => {
 		fetchRepos();
 	}, []);
 
-	if (loading) return <main><p>Loading data</p></main>;
+	if (loading) return <p>Loading data</p>;
 
 	return (
 		<>
 			<h1>Coding</h1>
 			<div>
-				{repos.map((repo) => (
-					<section key={repo.id}>
-						<p className="sub-category">{repo.name}</p>
-						{(languageIcons[repo.language] || (() => <FaGithub className="lang-icon" />))()}
-						<p>Written in {repo.language || "unknown language"}.</p>
-						<p>{repo.description || "No description available"}.<br/><a href={repo.html_url} target="_blank" rel="noopener noreferrer">GitHub repository link</a>.</p>
-					</section>
-				))}
+				{repos.map((repo) => {
+					const IconComponent = languageIcons[repo.language || ""] || (() => <FaGithub className="lang-icon" />);
+					return (
+						<section key={repo.id}>
+							<p className="sub-category">{repo.name}</p>
+							<IconComponent />
+							<p>Written in {repo.language || "unknown language"}.</p>
+							<p>
+								{repo.description || "No description available"}.<br />
+								<a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+									GitHub repository link
+								</a>.
+							</p>
+						</section>
+					);
+				})}
+
 			</div>
 		</>
 	);

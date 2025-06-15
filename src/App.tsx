@@ -11,8 +11,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import EasterEggModal from "./components/EasterEggModal";
 
-const App = () => {
-	const [menuOpen, setMenuOpen] = useState(false);
+const App: React.FC = () => {
+	const [menuOpen, setMenuOpen] = useState<boolean>(false);
 	const menuClose = () => setMenuOpen(false);
 
 	return (
