@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-const Footer = () => {
+const Footer: React.FC = () => {
 	return (
 		<footer id="footer">
 			<p>

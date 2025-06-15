@@ -1,4 +1,3 @@
-import React from "react";
 import squareprofile from "../images/squareprofile.jpg";
 
 const Home = () => {
