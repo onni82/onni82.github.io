@@ -7,8 +7,8 @@ import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Work from "./pages/Work";
 import PageNotFound from "./pages/PageNotFound";
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import EasterEggModal from "./components/EasterEggModal";
 
 const App: React.FC = () => {
