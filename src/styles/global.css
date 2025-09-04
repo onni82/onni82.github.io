@@ -153,6 +153,9 @@ main > div > section {
 		width: 56vw;
 		margin: 0 auto;
 	}
+	main > h1 {
+		text-align: center;
+	}
 }
 @media screen and (max-width: 537px) {
 	main > div > section {
