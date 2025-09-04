@@ -148,6 +148,12 @@ main > div > section {
 	padding: 1em;
 	margin: 0;
 }
+@media screen and (min-width: 1128px) {
+	main > div {
+		width: 56vw;
+		margin: 0 auto;
+	}
+}
 @media screen and (max-width: 537px) {
 	main > div > section {
 		flex: 1 1 100%;
