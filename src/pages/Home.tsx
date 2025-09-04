@@ -26,7 +26,7 @@ const Home: React.FC = () => {
 						<span className="bold-text">April 17, 2026</span>.
 					</p>
 					<p>
-						My skills cover both frontend and backend. I have experience with{" "}
+						My skills cover both front end and back end. I have experience with{" "}
 						<span className="bold-text">HTML</span>,{" "}
 						<span className="bold-text">CSS</span>,{" "}
 						<span className="bold-text">JavaScript</span>,{" "}
@@ -42,7 +42,7 @@ const Home: React.FC = () => {
 						where we built a{" "}
 						<span className="bold-text">Software as a Service solution</span> for
 						online store services. My role was{" "}
-						<span className="bold-text">frontend developer in React</span>, where
+						<span className="bold-text">front-end developer in React</span>, where
 						I implemented <span className="bold-text">Redux</span> and worked
 						closely with UI/UX and DevOps students using{" "}
 						<span className="bold-text">Figma designs</span> and{" "}
