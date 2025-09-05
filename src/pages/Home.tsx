@@ -1,5 +1,5 @@
 import React from "react";
-import squareprofile from "../images/squareprofile.jpg";
+import squareprofile from "../images/profile.jpg";
 
 const Home: React.FC = () => {
 	return (
