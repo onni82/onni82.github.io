@@ -10,7 +10,7 @@
 		{
 			"id": 1,
 			"school": "Chas Academy",
-			"period": "Sep 2024 - Present",
+			"period": "September 2024 - Present",
 			"schoolType": "Vocational University",
 			"course": ".NET Full Stack Development",
 			"location": "Stockholm, Sweden"
@@ -18,7 +18,7 @@
 		{
 			"id": 2,
 			"school": "Iris Hadar",
-			"period": "Apr 2024 - June 2024",
+			"period": "April 2024 - June 2024",
 			"schoolType": "Municipal Adult Education",
 			"course": "Web Development 1",
 			"location": "Remote course (Sweden)"
@@ -26,7 +26,7 @@
 		{
 			"id": 3,
 			"school": "Iris Hadar",
-			"period": "Nov 2023 - Jan 2024",
+			"period": "November 2023 - January 2024",
 			"schoolType": "Municipal Adult Education",
 			"course": "Mathematics 2a",
 			"location": "Remote course (Sweden)"
@@ -34,7 +34,7 @@
 		{
 			"id": 4,
 			"school": "Iris Hadar",
-			"period": "July 2023 - Sep 2023",
+			"period": "July 2023 - September 2023",
 			"schoolType": "Municipal Adult Education",
 			"course": "Programming 1 (C++)",
 			"location": "Remote course (Sweden)"
@@ -42,7 +42,7 @@
 		{
 			"id": 5,
 			"school": "Be Licensed",
-			"period": "Feb 2022 - Mar 2022",
+			"period": "February 2022 - March 2022",
 			"schoolType": "Vocational Training",
 			"course": "Video Production",
 			"location": "Remote course (Sweden)"
@@ -50,7 +50,7 @@
 		{
 			"id": 6,
 			"school": "Be Licensed",
-			"period": "Dec 2021 - Jan 2022",
+			"period": "December 2021 - January 2022",
 			"schoolType": "Vocational Training",
 			"course": "Audio Production",
 			"location": "Remote course (Sweden)"
@@ -58,7 +58,7 @@
 		{
 			"id": 7,
 			"school": "Dalarna University",
-			"period": "2018 - 2021",
+			"period": "August 2018 - August 2021",
 			"schoolType": "Bachelor of Science",
 			"course": "Sound and Music Production",
 			"location": "Falun, Sweden"
@@ -88,6 +88,46 @@
 			"title": "Web Development Intern",
 			"description": "An internship that involved creating a website for a film project. The task consisted of coding HTML, CSS and JavaScript with constant updating of the website after receiving feedback.",
 			"location": "Stockholm, Sweden"
+		},
+		{
+			"id": 4,
+			"employer": "Tribespider Film AB",
+			"period": "March 2022",
+			"title": "Video Production Intern",
+			"description": "On behalf of Ove Valeskog, I edited trailers for a movie and videos thanking a sponsor who participated in another movie. Ove Valeskog was my supervisor and he works as director and producer in the film, sound and music industry.",
+			"location": "Stockholm, Sweden"
+		},
+		{
+			"id": 5,
+			"employer": "Sylvelin Måkestad",
+			"period": "December 2021 - January 2022",
+			"title": "Sound Production Intern",
+			"description": "An internship focused on sound production, as we made a radio show for a movie directed by Sylvelin Måkestad. The work included script writing, voice recording, editing and mixing. Production company: Aldeles.",
+			"location": "Stockholm, Sweden"
+		},
+		{
+			"id": 6,
+			"employer": "Borlänge Municipality",
+			"period": "June 2021 - August 2021",
+			"title": "Resident Care Assistant",
+			"description": "As a resident care assistant, I take care of elderly people who suffer from dementia. At the nursing home, I take care of the elderly by helping them get dressed, help them take showers, being there for them when they need someone to talk to, and taking them out for strolls. This kind of work also include serving food and drinks for the people who live at the nursing home.",
+			"location": "Borlänge, Sweden"
+		},
+		{
+			"id": 7,
+			"employer": "Two Feathers Studio",
+			"period": "May 2021",
+			"title": "Voice Actor",
+			"description": "",
+			"location": "Remote (Sweden)"
+		},
+		{
+			"id": 8,
+			"employer": "Studieförbundet Vuxenskolan",
+			"period": "March 2021 - May 2021",
+			"title": "",
+			"description": "",
+			"location": ""
 		}
 	],
 	"skills": [
