@@ -18,7 +18,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     const [theme, setTheme] = useState<Theme>(storedTheme || (prefersDark ? "dark" : "light"));
 
     useEffect(() => {
-        document.getElementById("box-content")?.classList.toggle("dark", theme === "dark");
+        document.documentElement.classList.toggle("dark", theme === "dark");
         localStorage.setItem("theme", theme);
     }, [theme]);
 
