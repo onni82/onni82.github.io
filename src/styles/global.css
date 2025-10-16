@@ -3,6 +3,28 @@
 	src: url(Quicksand-Regular.ttf);
 }
 
+:root {
+	--bg-color: rgb(231, 255, 240);
+	--text-color: rgb(78, 87, 104);
+	--link-color: rgb(188, 119, 0);
+	--link-hover: rgb(222, 141, 0);
+	--link-active: #000000;
+	--button-bg: #ffffff;
+	--button-text: #000000;
+	--button-border: #000000;
+}
+
+.dark {
+	--bg-color: #121212;
+	--text-color: #e0e0e0;
+	--link-color: #ffb74d;
+	--link-hover: #ffa726;
+	--link-active: #ffffff;
+	--button-bg: #1e1e1e;
+	--button-text: #ffffff;
+	--button-border: #ffffff;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -18,10 +40,10 @@ html {
 body {
 	zoom: 1;
 	font-family: "Quicksand", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: rgb(78, 87, 104);
+	color: var(--text-color);
 	margin: 0;
 	min-width: 320px;
-	background-color: rgb(231, 255, 240);
+	background-color: var(--bg-color);
 	background-size: 100% auto;
 	display: flex;
 	flex-direction: column;
@@ -247,15 +269,15 @@ h3 {
 
 /* navigation */
 a {
-	color: rgb(188, 119, 0);
+	color: var(--link-color);
 	text-decoration: none;
 }
 a[aria-current],
 a.active {
-	color: rgb(0, 0, 0);
+	color: var(--link-active);
 }
 a:hover {
-	color: rgb(222, 141, 0);
+	color: var(--link-hover);
 	text-decoration: none;
 }
 
