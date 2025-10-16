@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 type HeaderProps = {
 	menuOpen: boolean;
@@ -26,6 +27,7 @@ const Header: React.FC<HeaderProps> = ({ menuOpen, setMenuOpen, menuClose }) => 
 					<li><NavLink to="/contact" onClick={menuClose}>Contact</NavLink></li>
 				</ul>
 			</nav>
+			<ThemeToggle />
 		</header>
 	);
 };
