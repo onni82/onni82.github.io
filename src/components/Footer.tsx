@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
 		<footer id="footer">
 			<p>
 				&copy; {new Date().getFullYear()}{" "}
-				<span className="black-text">Onni Bucht</span>
+				Onni Bucht
 			</p>
 		</footer>
 	);
