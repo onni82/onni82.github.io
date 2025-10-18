@@ -1,8 +1,11 @@
+/* fonts */
 @font-face {
 	font-family: Quicksand;
 	src: url(Quicksand-Regular.ttf);
 }
 
+
+/* css variables for light mode */
 :root {
 	--bg-color: rgb(231, 255, 240);
 	--text-color: rgb(78, 87, 104);
@@ -14,6 +17,7 @@
 	--button-border: #000000;
 }
 
+/* css variables for dark mode */
 .dark {
 	--bg-color: #121212;
 	--text-color: #e0e0e0;
@@ -25,6 +29,7 @@
 	--button-border: #ffffff;
 }
 
+/* global reset */
 * {
 	margin: 0;
 	padding: 0;
@@ -142,9 +147,6 @@ footer {
 footer>p,
 footer>a {
 	padding: 0 2%;
-}
-.black-text {
-	color: #000;
 }
 
 /* main element div and section content */
@@ -323,6 +325,17 @@ span#easteregg {
 }
 span#easteregg:hover {
 	color: #ff93fb;
+}
+
+/* button styling */
+.theme-toggle-button {
+	background-color: var(--button-bg);
+	color: var(--button-text);
+	border: 1px solid var(--button-border);
+	border-radius: 8px;
+	padding: 8px;
+	cursor: pointer;
+	margin-left: 1rem;
 }
 
 /* 404 page */
