@@ -15,15 +15,18 @@ const Home: React.FC = () => {
 				</section>
 				<section>
 					<p>
-						I am currently in my final year at{" "}
-						<span className="bold-text">Chas Academy</span>, studying{" "}
-						<span className="bold-text">.NET fullstack development</span>.
+						I'm Onni Bucht, a final-year student at{" "}
+						<span className="bold-text">Chas Academy</span> studying{" "}
+						<span className="bold-text">.NET full stack development</span>. I'm currently
+						looking for an internship where I can grow as a developer and contribute in a
+						professional team.
 					</p>
 					<p>
-						As part of my education, I am looking for an{" "}
-						<span className="bold-text">internship in fullstack development</span>{" "}
-						from <span className="bold-text">December 1, 2025</span> until{" "}
-						<span className="bold-text">April 17, 2026</span>.
+						I'm looking for internships that start{" "}
+						<span className="bold-text">immediately</span> and will end{" "}
+						<span className="bold-text">April 17, 2026</span>, and I'm interested in both{" "}
+						<span className="bold-text">full stack</span> and{" "}
+						<span className="bold-text">system development</span> roles.
 					</p>
 					<p>
 						My skills cover both front end and back end. I have experience with{" "}
@@ -38,28 +41,30 @@ const Home: React.FC = () => {
 						<span className="bold-text">Minimal API</span>.
 					</p>
 					<p>
-						One of my biggest projects was a team assignment for a startup company
+						One of my most valuable experiences was a team project for a startup company,
 						where we built a{" "}
-						<span className="bold-text">Software as a Service solution</span> for
-						online store services. My role was{" "}
-						<span className="bold-text">front-end developer in React</span>, where
-						I implemented <span className="bold-text">Redux</span> and worked
-						closely with UI/UX and DevOps students using{" "}
-						<span className="bold-text">Figma designs</span> and{" "}
-						<span className="bold-text">GitLab</span> for collaboration.
+						<span className="bold-text">Software as a Service</span> solution. I worked as a{" "}
+						<span className="bold-text">frontend developer in React</span>, implementing{" "}
+						<span className="bold-text">Redux</span> and collaborating closely with UI/UX
+						and DevOps students using{" "}
+						<span className="bold-text">Figma</span> and{" "}
+						<span className="bold-text">GitLab</span>.
 					</p>
 					<p>
-						Before my studies, I was self-taught in{" "}
+						I've also lived and studied abroad in{" "}
+						<span className="bold-text">Seoul, South Korea</span>, an experience that helped
+						me develop strong communication skills and a broad perspective through working
+						with people from diverse backgrounds.
+					</p>
+					<p>
+						Programming has been a long-term interest of mine. Before my studies, I was
+						self-taught in{" "}
 						<span className="bold-text">HTML</span>,{" "}
 						<span className="bold-text">JavaScript</span>,{" "}
 						<span className="bold-text">SQL</span>,{" "}
 						<span className="bold-text">PHP</span>, and{" "}
-						<span className="bold-text">Java</span>.
-					</p>
-					<p>
-						I am curious, solution-oriented, and passionate about learning new
-						technologies. I look forward to contributing my skills and gaining
-						experience during my internship.
+						<span className="bold-text">Java</span>. I'm curious, solution-oriented, and
+						motivated to keep learning and improving.
 					</p>
 				</section>
 			</div>
