@@ -15,18 +15,17 @@ const Home: React.FC = () => {
 				</section>
 				<section>
 					<p>
-						I'm Onni Bucht, a final-year student at{" "}
+						I'm Onni Bucht, a soon-to-graduate student at{" "}
 						<span className="bold-text">Chas Academy</span> studying{" "}
 						<span className="bold-text">.NET full stack development</span>. I'm currently
-						looking for an internship where I can grow as a developer and contribute in a
-						professional team.
+						doing an internship where I continue to grow as a developer and contribute in
+						a professional team.
 					</p>
 					<p>
-						I'm looking for internships that start{" "}
-						<span className="bold-text">immediately</span> and will end{" "}
-						<span className="bold-text">April 17, 2026</span>, and I'm interested in both{" "}
-						<span className="bold-text">full stack</span> and{" "}
-						<span className="bold-text">system development</span> roles.
+						I'm currently doing an internship that runs until{" "}
+						<span className="bold-text">summer</span>, and I'm interested in continuing in{" "}
+						<span className="bold-text">full stack</span> or{" "}
+						<span className="bold-text">system development</span> roles after graduation.
 					</p>
 					<p>
 						My skills cover both front end and back end. I have experience with{" "}
