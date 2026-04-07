@@ -67,6 +67,14 @@
 	"work": [
 		{
 			"id": 1,
+			"employer": "Cixma Group AB",
+			"period": "February 2026 - Present",
+			"title": "Full Stack Developer",
+			"description": "Full stack development internship, fully remote work at a company based in Gävle, Sweden.",
+			"location": "Gävle, Sweden (remote)"
+		},
+		{
+			"id": 2,
 			"employer": "Securitas Sverige AB",
 			"period": "April 2022 - Present",
 			"title": "Security Guard",
@@ -74,7 +82,7 @@
 			"location": "Södertälje, Sweden"
 		},
 		{
-			"id": 2,
+			"id": 3,
 			"employer": "Mind Proxy AB",
 			"period": "June 2023 - Sept 2023",
 			"title": "Supervisor and Administrator",
@@ -82,7 +90,7 @@
 			"location": "Norberg, Sweden (Remote)"
 		},
 		{
-			"id": 3,
+			"id": 4,
 			"employer": "Sylvelin Måkestad",
 			"period": "April 2022 - June 2022",
 			"title": "Web Development Intern",
@@ -90,7 +98,7 @@
 			"location": "Stockholm, Sweden"
 		},
 		{
-			"id": 4,
+			"id": 5,
 			"employer": "Tribespider Film AB",
 			"period": "March 2022",
 			"title": "Video Production Intern",
@@ -98,7 +106,7 @@
 			"location": "Stockholm, Sweden"
 		},
 		{
-			"id": 5,
+			"id": 6,
 			"employer": "Sylvelin Måkestad",
 			"period": "December 2021 - January 2022",
 			"title": "Sound Production Intern",
@@ -106,7 +114,7 @@
 			"location": "Stockholm, Sweden"
 		},
 		{
-			"id": 6,
+			"id": 7,
 			"employer": "Borlänge Municipality",
 			"period": "June 2021 - August 2021",
 			"title": "Resident Care Assistant",
@@ -114,7 +122,7 @@
 			"location": "Borlänge, Sweden"
 		},
 		{
-			"id": 7,
+			"id": 8,
 			"employer": "Two Feathers Studio",
 			"period": "May 2021",
 			"title": "Voice Actor",
@@ -122,7 +130,7 @@
 			"location": "Remote (Sweden)"
 		},
 		{
-			"id": 8,
+			"id": 9,
 			"employer": "Studieförbundet Vuxenskolan",
 			"period": "March 2021 - May 2021",
 			"title": "Video Production Intern",
