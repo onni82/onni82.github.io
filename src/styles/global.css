@@ -371,23 +371,3 @@ span#easteregg:hover {
 	cursor: pointer;
 	padding: 0;
 }
-
-/* 404 page */
-.options {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-}
-.options a {
-	text-decoration: none;
-	color: #50fa7b;
-	font-weight: bold;
-	border: 2px solid #50fa7b;
-	padding: 10px 20px;
-	border-radius: 10px;
-	transition: 0.3s;
-}
-.options a:hover {
-	background-color: #50fa7b;
-	color: #1a1a1a;
-}
