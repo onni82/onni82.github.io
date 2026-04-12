@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import Coding from "./pages/Coding";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Work from "./pages/Work";
-import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import EasterEggModal from "./components/EasterEggModal";
@@ -15,24 +13,73 @@ const App: React.FC = () => {
 	const [menuOpen, setMenuOpen] = useState<boolean>(false);
 	const menuClose = () => setMenuOpen(false);
 
+	useEffect(() => {
+		const scrollToHash = () => {
+			if (!window.location.hash) return;
+
+			const target = document.querySelector(window.location.hash);
+			if (target instanceof HTMLElement) {
+				const header = document.querySelector("header");
+				const fixedHeaderOffset =
+					window.innerWidth <= 537
+						? 78
+						: header instanceof HTMLElement
+							? header.offsetHeight + 8
+							: 0;
+				const top = target.getBoundingClientRect().top + window.scrollY - fixedHeaderOffset;
+
+				window.scrollTo({ top, behavior: "smooth" });
+			}
+		};
+
+		window.addEventListener("hashchange", scrollToHash);
+		scrollToHash();
+
+		return () => {
+			window.removeEventListener("hashchange", scrollToHash);
+		};
+	}, []);
+
+	useEffect(() => {
+		const closeMenuOnResize = () => {
+			if (window.innerWidth > 537) {
+				setMenuOpen(false);
+			}
+		};
+
+		window.addEventListener("resize", closeMenuOnResize);
+		closeMenuOnResize();
+
+		return () => {
+			window.removeEventListener("resize", closeMenuOnResize);
+		};
+	}, []);
+
 	return (
 		<>
 			<EasterEggModal />
-			<BrowserRouter>
-				<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} menuClose={menuClose} />
-				<main>
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/coding" element={<Coding />} />
-						<Route path="/contact" element={<Contact />} />
-						<Route path="/education" element={<Education />} />
-						<Route path="/skills" element={<Skills />} />
-						<Route path="/work" element={<Work />} />
-						<Route path="/*" element={<PageNotFound />} />
-					</Routes>
-				</main>
-				<Footer />
-			</BrowserRouter>
+			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} menuClose={menuClose} />
+			<main>
+				<section id="home" className="page-anchor">
+					<Home />
+				</section>
+				<section id="work" className="page-anchor">
+					<Work />
+				</section>
+				<section id="coding" className="page-anchor">
+					<Coding />
+				</section>
+				<section id="education" className="page-anchor">
+					<Education />
+				</section>
+				<section id="skills" className="page-anchor">
+					<Skills />
+				</section>
+				<section id="contact" className="page-anchor">
+					<Contact />
+				</section>
+			</main>
+			<Footer />
 		</>
 	);
 };
