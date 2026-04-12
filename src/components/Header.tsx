@@ -1,4 +1,5 @@
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 type HeaderProps = {
 	menuOpen: boolean;
@@ -13,7 +14,10 @@ const Header: React.FC<HeaderProps> = ({ menuOpen, setMenuOpen, menuClose }) => 
 		<header>
 			<div>
 				<a href="#home" aria-label="Home" id="header-logo" onClick={menuClose}></a>
-				<span aria-label="Menu" id="menu-icon" onClick={toggleMenu} className={menuOpen ? "open" : ""}>&#9776;</span>
+				<div className="header-actions">
+					<ThemeToggle />
+					<span aria-label="Menu" id="menu-icon" onClick={toggleMenu} className={menuOpen ? "open" : ""}>&#9776;</span>
+				</div>
 			</div>
 			<nav id="menu" className={menuOpen ? "open" : ""}>
 				<ul>
