@@ -226,6 +226,7 @@ section > img.fit-image {
 img.rounded-image {
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
+	border: 3px solid var(--text-color);
 	object-fit: cover;
 }
 
