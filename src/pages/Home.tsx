@@ -8,7 +8,7 @@ const Home: React.FC = () => {
 			<div>
 				<section>
 					<img
-						className="fit-image"
+						className="fit-image rounded-image"
 						src={squareprofile}
 						alt="Profile picture of Onni Bucht"
 					/>
