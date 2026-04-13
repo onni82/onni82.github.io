@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaGithub } from "react-icons/fa";
-import languageIcons from "../utils/languageIcons";
 
 type GitHubRepo = {
 	id: number;
@@ -40,11 +38,9 @@ const Coding: React.FC = () => {
 			<h1>Coding</h1>
 			<div>
 				{repos.map((repo) => {
-					const IconComponent = languageIcons[repo.language || ""] || (() => <FaGithub className="lang-icon" />);
 					return (
 						<section key={repo.id}>
 							<p className="sub-category">{repo.name}</p>
-							{/* <IconComponent /> */}
 							<p>Written in {repo.language || "unknown language"}.</p>
 							<p>
 								{repo.description || "No description available"}.<br />
