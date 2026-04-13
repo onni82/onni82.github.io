@@ -44,7 +44,7 @@ const Coding: React.FC = () => {
 					return (
 						<section key={repo.id}>
 							<p className="sub-category">{repo.name}</p>
-							<IconComponent />
+							{/* <IconComponent /> */}
 							<p>Written in {repo.language || "unknown language"}.</p>
 							<p>
 								{repo.description || "No description available"}.<br />
