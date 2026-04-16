@@ -147,6 +147,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
+	margin-top: 1rem;
 }
 .page-anchor > div > section {
 	flex: 1 1 45%;
@@ -157,7 +158,7 @@ main {
 @media screen and (min-width: 1128px) {
 	.page-anchor > div {
 		width: 56vw;
-		margin: 0 auto;
+		margin: 1rem auto 0px auto;
 	}
 	.page-anchor > h1,
 	.container {
