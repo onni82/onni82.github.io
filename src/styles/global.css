@@ -220,9 +220,6 @@ main {
 		scroll-margin-top: 78px;
 	}
 }
-section span.bold-text {
-	font-weight: bold;
-}
 section > img.fit-image {
 	width: 50%;
 	height: auto;
