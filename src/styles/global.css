@@ -219,7 +219,7 @@ section span.bold-text {
 	font-weight: bold;
 }
 section > img.fit-image {
-	width: 100%;
+	width: 50%;
 	height: auto;
 	max-width: 500px;
 }
@@ -228,6 +228,9 @@ img.rounded-image {
 	border-radius: 50%;
 	border: 2px solid var(--text-color);
 	object-fit: cover;
+	box-shadow: 0 0 0.7rem color-mix(in srgb, var(--link-hover) 35%, transparent),
+		0 0 1.6rem color-mix(in srgb, var(--link-hover) 22%, transparent);
+	transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 .home-intro {
 	display: flex;
@@ -235,6 +238,15 @@ img.rounded-image {
 	justify-content: center;
 	align-items: flex-start;
 	gap: 0.5rem;
+}
+.home-hero {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+.home-image-section {
+	display: flex;
+	justify-content: flex-end;
 }
 
 /* text styling */

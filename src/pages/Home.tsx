@@ -4,8 +4,8 @@ import squareprofile from "../images/profile.jpg";
 const Home: React.FC = () => {
 	return (
 		<>
-			<div>
-				<section>
+			<div className="home-hero">
+				<section className="home-image-section">
 					<img
 						className="fit-image rounded-image"
 						src={squareprofile}
