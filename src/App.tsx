@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
@@ -60,6 +61,9 @@ const App: React.FC = () => {
 			<main>
 				<section id="home" className="page-anchor">
 					<Home />
+				</section>
+				<section id="about" className="page-anchor">
+					<About />
 				</section>
 				<section id="work" className="page-anchor">
 					<Work />
