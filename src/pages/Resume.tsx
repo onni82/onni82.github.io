@@ -1,10 +1,10 @@
 import React from "react";
 import data from "../assets/data.json";
 
-const Work: React.FC = () => {
+const Resume: React.FC = () => {
 	return (
 		<>
-			<h1>Work Experience</h1>
+			<h1>Résumé</h1>
 			<div>
 				{data.work.map((work) => (
 					<section key={work.id}>
@@ -26,4 +26,4 @@ const Work: React.FC = () => {
 	);
 };
 
-export default Work;
+export default Resume;

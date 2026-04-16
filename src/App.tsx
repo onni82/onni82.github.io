@@ -3,9 +3,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Education from "./pages/Education";
 import Skills from "./pages/Skills";
-import Work from "./pages/Work";
+import Resume from "./pages/Resume";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -65,14 +64,11 @@ const App: React.FC = () => {
 				<section id="about" className="page-anchor">
 					<About />
 				</section>
-				<section id="work" className="page-anchor">
-					<Work />
+				<section id="resume" className="page-anchor">
+					<Resume />
 				</section>
 				<section id="projects" className="page-anchor">
 					<Projects />
-				</section>
-				<section id="education" className="page-anchor">
-					<Education />
 				</section>
 				<section id="skills" className="page-anchor">
 					<Skills />
