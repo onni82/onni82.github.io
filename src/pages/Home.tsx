@@ -4,7 +4,6 @@ import squareprofile from "../images/profile.jpg";
 const Home: React.FC = () => {
 	return (
 		<>
-			<h1>Hello, I'm Onni Bucht</h1>
 			<div>
 				<section>
 					<img
@@ -13,7 +12,12 @@ const Home: React.FC = () => {
 						alt="Profile picture of Onni Bucht"
 					/>
 				</section>
-				<section>
+				<section className="home-intro">
+					<h1>Hello, I'm Onni Bucht</h1>
+					<p>Full Stack Student · Chas Academy</p>
+					<p>From Södertälje, Sweden </p>
+				</section>
+				{/* <section>
 					<p>
 						I'm Onni Bucht, a soon-to-graduate student at{" "}
 						<span className="bold-text">Chas Academy</span> studying{" "}
@@ -65,7 +69,7 @@ const Home: React.FC = () => {
 						<span className="bold-text">Java</span>. I'm curious, solution-oriented, and
 						motivated to keep learning and improving.
 					</p>
-				</section>
+				</section> */}
 			</div>
 		</>
 	);
