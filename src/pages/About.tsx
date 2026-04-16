@@ -5,7 +5,7 @@ const About: React.FC = () => {
         <>
             <h1>About Me</h1>
             <div>
-                <section>
+				<section className="about-section">
 					<p>
 						I'm Onni Bucht, a soon-to-graduate student at{" "}
 						<span className="bold-text">Chas Academy</span> studying{" "}
