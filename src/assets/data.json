@@ -148,11 +148,23 @@
 			"id": 2,
 			"sub_category": "Media",
 			"description": ["Music writing", "Lyric writing", "Audio engineering", "Music production"]
+		}
+	],
+	"languages": [
+		{
+			"id": 1,
+			"lang": "English",
+			"level": "Fluent"
+		},
+		{
+			"id": 2,
+			"lang": "Swedish",
+			"level": "Native"
 		},
 		{
 			"id": 3,
-			"sub_category": "Languages",
-			"description": ["English", "Swedish", "Some Korean"]
+			"lang": "Korean",
+			"level": "Conversational"
 		}
 	],
 	"tools": [

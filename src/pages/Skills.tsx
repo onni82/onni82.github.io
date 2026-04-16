@@ -18,6 +18,17 @@ const Skills: React.FC = () => {
 						</div>
 					</section>
 				))}
+				<section>
+					<p className="sub-category">Languages</p>
+					<ul className="language-list">
+						{data.languages.map((language) => (
+							<li key={language.id} className="language-item">
+								<span className="language-name">{language.lang}</span>
+								<span className="language-level">{language.level}</span>
+							</li>
+						))}
+					</ul>
+				</section>
 			</div>
 			<h1>Tools</h1>
 			<div>
