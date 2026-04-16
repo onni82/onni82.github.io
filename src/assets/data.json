@@ -159,7 +159,7 @@
 		{
 			"id": 2,
 			"sub_category": "Code Editors/IDE",
-			"description": "Visual Studio, Sublime Text, Code::Blocks, Eclipse"
+			"description": "Visual Studio, Visual Studio Code, Sublime Text, Code::Blocks, Eclipse"
 		},
 		{
 			"id": 3,
