@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Home from "./pages/Home";
-import Coding from "./pages/Coding";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
 import Skills from "./pages/Skills";
@@ -64,8 +64,8 @@ const App: React.FC = () => {
 				<section id="work" className="page-anchor">
 					<Work />
 				</section>
-				<section id="coding" className="page-anchor">
-					<Coding />
+				<section id="projects" className="page-anchor">
+					<Projects />
 				</section>
 				<section id="education" className="page-anchor">
 					<Education />

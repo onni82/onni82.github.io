@@ -142,17 +142,17 @@
 		{
 			"id": 1,
 			"sub_category": "Programming",
-			"description": "C#, C++, HTML, CSS, JavaScript, TypeScript, Node.js, React, SQL"
+			"description": ["C#", "C++", "HTML", "CSS", "JavaScript", "TypeScript", "Node.js", "React", "SQL"]
 		},
 		{
 			"id": 2,
 			"sub_category": "Media",
-			"description": "Music writing, lyric writing, audio engineering & music production"
+			"description": ["Music writing", "Lyric writing", "Audio engineering", "Music production"]
 		},
 		{
 			"id": 3,
 			"sub_category": "Languages",
-			"description": "English, Swedish & some Korean"
+			"description": ["English", "Swedish", "Some Korean"]
 		}
 	],
 	"tools": [

@@ -8,7 +8,7 @@ type GitHubRepo = {
 	html_url: string;
 };
 
-const Coding: React.FC = () => {
+const Projects: React.FC = () => {
 	const [repos, setRepos] = useState<GitHubRepo[]>([]);
 	const [loading, setLoading] = useState(true);
 	const username = "onni82";
@@ -35,7 +35,7 @@ const Coding: React.FC = () => {
 
 	return (
 		<>
-			<h1>Coding</h1>
+			<h1>Projects</h1>
 			<div>
 				{repos.map((repo) => {
 					return (
@@ -56,4 +56,4 @@ const Coding: React.FC = () => {
 	);
 };
 
-export default Coding;
+export default Projects;

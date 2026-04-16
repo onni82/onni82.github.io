@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ menuOpen, setMenuOpen, menuClose }) => 
 				<ul>
 					<li><a href="#home" onClick={menuClose}>Home</a></li>
 					<li><a href="#work" onClick={menuClose}>Work</a></li>
-					<li><a href="#coding" onClick={menuClose}>Coding</a></li>
+					<li><a href="#projects" onClick={menuClose}>Projects</a></li>
 					<li><a href="#education" onClick={menuClose}>Education</a></li>
 					<li><a href="#skills" onClick={menuClose}>Skills</a></li>
 					<li><a href="#contact" onClick={menuClose}>Contact</a></li>

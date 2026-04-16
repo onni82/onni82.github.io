@@ -9,7 +9,11 @@ const Skills: React.FC = () => {
 				{data.skills.map((skill) => (
 					<section key={skill.id}>
 						<p className="sub-category">{skill.sub_category}</p>
-						<p>{skill.description}</p>
+						<ul>
+							{skill.description.map((item, index) => (
+								<li key={`${skill.id}-${index}`}>{item}</li>
+							))}
+						</ul>
 					</section>
 				))}
 			</div>
