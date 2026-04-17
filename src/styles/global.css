@@ -184,9 +184,6 @@ main {
 		width: 56vw;
 		margin: 1rem auto 0px auto;
 	}
-	.home-image-section {
-		justify-content: flex-end;
-	}
 	.page-anchor > h1,
 	.container {
 		text-align: center;
@@ -279,7 +276,7 @@ img.rounded-image {
 }
 .social-button-group {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	gap: 0.75rem;
 	margin-top: 0.75rem;
 }
@@ -308,11 +305,54 @@ img.rounded-image {
 }
 .home-hero {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
 	gap: 0.5rem;
 }
 .home-image-section {
 	display: flex;
+}
+.home-intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.5rem;
+}
+.home-intro h1,
+.home-intro p {
+	white-space: nowrap;
+}
+@media screen and (max-width: 629px) {
+	.home-image-section {
+		width: 100%;
+		justify-content: center;
+	}
+	.home-intro {
+		width: 100%;
+		align-items: center;
+		text-align: center;
+	}
+	.social-button-group {
+		justify-content: center;
+	}
+}
+@media screen and (min-width: 630px) {
+	.home-hero {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+	.home-image-section {
+		flex: 0 0 224px;
+	}
+	.home-intro {
+		flex: 1 1 0;
+		min-width: 0;
+	}
+	.home-image-section {
+		justify-content: flex-end;
+	}
 }
 .about-section {
 	padding: 1rem;
