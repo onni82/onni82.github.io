@@ -184,6 +184,9 @@ main {
 		width: 56vw;
 		margin: 1rem auto 0px auto;
 	}
+	.home-image-section {
+		justify-content: flex-end;
+	}
 	.page-anchor > h1,
 	.container {
 		text-align: center;
@@ -309,7 +312,6 @@ img.rounded-image {
 }
 .home-image-section {
 	display: flex;
-	justify-content: flex-end;
 }
 .about-section {
 	padding: 1rem;
