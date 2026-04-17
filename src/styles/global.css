@@ -11,9 +11,9 @@
 	--link-color: rgb(188, 119, 0);
 	--link-hover: rgb(222, 141, 0);
 	--link-active: #000000;
-	--button-bg: rgb(231, 255, 240);
+	--button-bg: #ffffff;
 	--button-text: #000000;
-	--button-border: #000000;
+	--button-border: #e2e6e9;
 	--box-background: #ffffff;
 	--box-border: #e2e6e9;
 }
@@ -25,9 +25,9 @@
 	--link-color: #ffb74d;
 	--link-hover: #ffa726;
 	--link-active: #ffffff;
-	--button-bg: #121212;
+	--button-bg: #161d1a;
 	--button-text: #ffffff;
-	--button-border: #ffffff;
+	--button-border: #26312c;
 	--box-background: #161d1a;
 	--box-border: #26312c;
 }
