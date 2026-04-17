@@ -279,41 +279,6 @@ img.rounded-image {
 	border-radius: 12px;
 	background: var(--box-background);
 }
-
-/* text styling */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p.sub-category {
-	margin-top: 0;
-	margin-left: 0;
-	font-weight: bold;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	margin-bottom: 10px;
-}
-p {
-	font-size: 1em;
-	margin-top: 5px;
-}
-h1 {
-	font-size: 1.8em;
-	margin-bottom: 20px;
-}
-h2,
-p.sub-category {
-	font-size: 1.2em;
-}
-
 .skill-chip-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -373,6 +338,40 @@ p.sub-category {
 	font-size: 0.95rem;
 	opacity: 0.9;
 	text-align: right;
+}
+
+/* text styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p.sub-category {
+	margin-top: 0;
+	margin-left: 0;
+	font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 10px;
+}
+p {
+	font-size: 1em;
+	margin-top: 5px;
+}
+h1 {
+	font-size: 1.8em;
+	margin-bottom: 20px;
+}
+h2,
+p.sub-category {
+	font-size: 1.2em;
 }
 h3 {
 	font-size: 1em;
