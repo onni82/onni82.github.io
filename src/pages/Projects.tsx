@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 type GitHubRepo = {
-	id: number;
+	author: string;
 	name: string;
-	language: string | null;
 	description: string | null;
-	html_url: string;
+	language: string | null;
+	languageColor: string | null;
+	stars: number;
+	forks: number;
 };
 
 const Projects: React.FC = () => {
@@ -42,7 +44,7 @@ const Projects: React.FC = () => {
 	useEffect(() => {
 		const fetchRepos = async () => {
 			try {
-				const response = await fetch(`https://api.github.com/users/${username}/repos`);
+				const response = await fetch(`https://pinned.berrysauce.dev/get/${username}`); //https://api.github.com/users/${username}/repos
 				if (!response.ok) throw new Error("Failed to fetch repositories");
 
 				const data = await response.json();
@@ -64,13 +66,16 @@ const Projects: React.FC = () => {
 			<h1>Projects</h1>
 			<div>
 				{repos.map((repo) => {
+					const repoUrl = `https://github.com/${repo.author}/${repo.name}`;
+					const repoKey = `${repo.author}/${repo.name}`;
+
 					return (
 						<a
 							className="project-card-link"
-							href={repo.html_url}
+							href={repoUrl}
 							target="_blank"
 							rel="noopener noreferrer"
-							key={repo.id}
+							key={repoKey}
 						>
 							<section className="project-section">
 								<p className="sub-category">{repo.name}</p>
