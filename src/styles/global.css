@@ -306,6 +306,35 @@ img.rounded-image {
 	color: inherit;
 	text-decoration: none;
 }
+.project-language {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.language-dot {
+	width: 0.65rem;
+	height: 0.65rem;
+	border-radius: 50%;
+	flex-shrink: 0;
+	color: #9ca3af;
+	background-color: currentColor;
+}
+.language-dot.python { color: blue; }
+.language-dot.java { color: red; }
+.language-dot.react { color: lightblue; }
+.language-dot.node { color: green; }
+.language-dot.php { color: purple; }
+.language-dot.rust { color: brown; }
+.language-dot.swift { color: orange; }
+.language-dot.c { color: blue; }
+.language-dot.csharp { color: purple; }
+.language-dot.cpp { color: blue; }
+.language-dot.go { color: cyan; }
+.language-dot.kotlin { color: purple; }
+.language-dot.ruby { color: red; }
+.language-dot.ts { color: blue; }
+.language-dot.html { color: orange; }
+.language-dot.css { color: blue; }
 .project-section:hover,
 .project-section:focus-visible {
 	transform: translateY(-1px);
