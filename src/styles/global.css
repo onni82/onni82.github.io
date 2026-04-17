@@ -279,6 +279,21 @@ img.rounded-image {
 	border-radius: 12px;
 	background: var(--box-background);
 }
+.project-section {
+	padding: 1rem;
+	border: 1px solid var(--box-border);
+	border-radius: 12px;
+	background: var(--box-background);
+	transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.project-section:hover,
+.project-section:focus-visible {
+	transform: translateY(-1px);
+	border-color: var(--link-hover);
+	box-shadow: 0 0 0.45rem color-mix(in srgb, var(--link-hover) 45%, transparent),
+		0 0 1rem color-mix(in srgb, var(--link-hover) 30%, transparent);
+	outline: none;
+}
 .skill-chip-list {
 	display: flex;
 	flex-wrap: wrap;

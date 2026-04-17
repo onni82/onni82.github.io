@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
 			<div>
 				{repos.map((repo) => {
 					return (
-						<section className="about-section" key={repo.id}>
+						<section className="project-section" key={repo.id}>
 							<p className="sub-category">{repo.name}</p>
 							<p>Written in {repo.language || "unknown language"}.</p>
 							<p>
