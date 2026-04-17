@@ -141,35 +141,52 @@
 	"skills": [
 		{
 			"id": 1,
-			"sub_category": "Media Skills",
-			"description": "Music writing, lyric writing, audio engineering & music production"
+			"sub_category": "Programming",
+			"description": ["C#", "C++", "HTML", "CSS", "JavaScript", "TypeScript", "Node.js", "React", "SQL"]
 		},
 		{
 			"id": 2,
-			"sub_category": "Languages",
-			"description": "English, Swedish & some Korean"
+			"sub_category": "Media",
+			"description": ["Music writing", "Lyric writing", "Audio engineering", "Music production"]
+		}
+	],
+	"languages": [
+		{
+			"id": 1,
+			"lang": "English",
+			"level": "Fluent"
+		},
+		{
+			"id": 2,
+			"lang": "Swedish",
+			"level": "Native"
+		},
+		{
+			"id": 3,
+			"lang": "Korean",
+			"level": "Conversational"
 		}
 	],
 	"tools": [
 		{
 			"id": 1,
 			"sub_category": "Operating Systems",
-			"description": "Windows, macOS, Ubuntu (Desktop & Server)"
+			"description": ["Windows", "macOS", "Ubuntu (Desktop & Server)"]
 		},
 		{
 			"id": 2,
 			"sub_category": "Code Editors/IDE",
-			"description": "Visual Studio, Sublime Text, Code::Blocks, Eclipse"
+			"description": ["Visual Studio", "Visual Studio Code", "Sublime Text", "Code::Blocks", "Eclipse"]
 		},
 		{
 			"id": 3,
 			"sub_category": "Digital Audio Workstations",
-			"description": "Avid Pro Tools, Image-Line FL Studio, Apple Logic Pro"
+			"description": ["Avid Pro Tools", "Image-Line FL Studio", "Apple Logic Pro"]
 		},
 		{
 			"id": 4,
 			"sub_category": "Video Editing Software",
-			"description": "Adobe Premiere Pro, Avid Media Composer, Apple Final Cut Pro"
+			"description": ["Adobe Premiere Pro", "Avid Media Composer", "Apple Final Cut Pro"]
 		}
 	]
 }
