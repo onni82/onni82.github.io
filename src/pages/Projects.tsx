@@ -39,16 +39,19 @@ const Projects: React.FC = () => {
 			<div>
 				{repos.map((repo) => {
 					return (
-						<section className="project-section" key={repo.id}>
-							<p className="sub-category">{repo.name}</p>
-							<p>Written in {repo.language || "unknown language"}.</p>
-							<p>
-								{repo.description || "No description available"}.<br />
-								<a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-									GitHub repository link
-								</a>.
-							</p>
-						</section>
+						<a
+							className="project-card-link"
+							href={repo.html_url}
+							target="_blank"
+							rel="noopener noreferrer"
+							key={repo.id}
+						>
+							<section className="project-section">
+								<p className="sub-category">{repo.name}</p>
+								<p>Written in {repo.language || "unknown language"}.</p>
+								<p>{repo.description || "No description available"}.</p>
+							</section>
+						</a>
 					);
 				})}
 			</div>
