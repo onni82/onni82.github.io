@@ -29,7 +29,7 @@
     "globals": "^17.5.0",
     "path": "^0.12.7",
     "typescript": "~6.0.2",
-    "typescript-eslint": "^8.58.2",
+    "typescript-eslint": "^8.59.1",
     "url": "^0.11.4",
     "vite": "^8.0.10"
   }
