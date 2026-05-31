@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./styles/global.css";
 import "./styles/print.css";
 import App from "./App";
-import { ThemeProvider } from "./context/ThemeContext";
+import { ThemeProvider } from "./context/ThemeContext.tsx";
 
 createRoot(document.getElementById("box-content")!).render(
 	<StrictMode>
