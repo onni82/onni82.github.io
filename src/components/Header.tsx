@@ -7,25 +7,61 @@ type HeaderProps = {
 	menuClose: () => void;
 };
 
-const Header: React.FC<HeaderProps> = ({ menuOpen, setMenuOpen, menuClose }) => {
+const Header: React.FC<HeaderProps> = ({
+	menuOpen,
+	setMenuOpen,
+	menuClose,
+}) => {
 	const toggleMenu = () => setMenuOpen((prev) => !prev);
 
 	return (
 		<header>
 			<div>
-				<a href="#home" aria-label="Home" id="header-logo" onClick={menuClose}></a>
+				<a
+					href="#home"
+					aria-label="Home"
+					id="header-logo"
+					onClick={menuClose}
+				></a>
 				<div className="header-actions">
 					<ThemeToggle />
-					<span aria-label="Menu" id="menu-icon" onClick={toggleMenu} className={menuOpen ? "open" : ""}>&#9776;</span>
+					<span
+						aria-label="Menu"
+						id="menu-icon"
+						onClick={toggleMenu}
+						className={menuOpen ? "open" : ""}
+					>
+						&#9776;
+					</span>
 				</div>
 			</div>
 			<nav id="menu" className={menuOpen ? "open" : ""}>
 				<ul>
-					<li><a href="#home" onClick={menuClose}>Home</a></li>
-					<li><a href="#resume" onClick={menuClose}>Résumé</a></li>
-					<li><a href="#projects" onClick={menuClose}>Projects</a></li>
-					<li><a href="#skills" onClick={menuClose}>Skills</a></li>
-					<li><a href="#contact" onClick={menuClose}>Contact</a></li>
+					<li>
+						<a href="#home" onClick={menuClose}>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="#resume" onClick={menuClose}>
+							Résumé
+						</a>
+					</li>
+					<li>
+						<a href="#projects" onClick={menuClose}>
+							Projects
+						</a>
+					</li>
+					<li>
+						<a href="#skills" onClick={menuClose}>
+							Skills
+						</a>
+					</li>
+					<li>
+						<a href="#contact" onClick={menuClose}>
+							Contact
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</header>

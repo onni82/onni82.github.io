@@ -7,13 +7,26 @@ const Contact: React.FC = () => {
 			<div className="container">
 				<section>
 					<div className="social-button-group">
-						<a className="social-button" href="https://github.com/onni82" target="_blank" rel="noopener noreferrer">
+						<a
+							className="social-button"
+							href="https://github.com/onni82"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							GitHub
 						</a>
-						<a className="social-button" href="https://www.linkedin.com/in/onni-bucht/" target="_blank" rel="noopener noreferrer">
+						<a
+							className="social-button"
+							href="https://www.linkedin.com/in/onni-bucht/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							LinkedIn
 						</a>
-						<a className="social-button" href="mailto:emanuel.bucht@icloud.com">
+						<a
+							className="social-button"
+							href="mailto:emanuel.bucht@icloud.com"
+						>
 							Email
 						</a>
 					</div>

@@ -11,7 +11,12 @@ const Skills: React.FC = () => {
 						<p className="sub-category">{skill.sub_category}</p>
 						<div className="skill-chip-list">
 							{skill.description.map((item, index) => (
-								<div key={`${skill.id}-${index}`} className="skill-chip" role="button" tabIndex={0}>
+								<div
+									key={`${skill.id}-${index}`}
+									className="skill-chip"
+									role="button"
+									tabIndex={0}
+								>
 									{item}
 								</div>
 							))}
@@ -23,8 +28,12 @@ const Skills: React.FC = () => {
 					<ul className="language-list">
 						{data.languages.map((language) => (
 							<li key={language.id} className="language-item">
-								<span className="language-name">{language.lang}</span>
-								<span className="language-level">{language.level}</span>
+								<span className="language-name">
+									{language.lang}
+								</span>
+								<span className="language-level">
+									{language.level}
+								</span>
 							</li>
 						))}
 					</ul>
@@ -37,7 +46,12 @@ const Skills: React.FC = () => {
 						<p className="sub-category">{tool.sub_category}</p>
 						<div className="tool-list">
 							{tool.description.map((item, index) => (
-								<div key={`${tool.id}-${index}`} className="skill-chip" role="button" tabIndex={0}>
+								<div
+									key={`${tool.id}-${index}`}
+									className="skill-chip"
+									role="button"
+									tabIndex={0}
+								>
 									{item}
 								</div>
 							))}

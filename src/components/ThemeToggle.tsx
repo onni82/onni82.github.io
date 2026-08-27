@@ -9,8 +9,12 @@ const ThemeToggle: React.FC = () => {
 		<button
 			onClick={toggleTheme}
 			className="theme-toggle-button"
-			aria-label={isLightTheme ? "Switch to dark mode" : "Switch to light mode"}
-			title={isLightTheme ? "Switch to dark mode" : "Switch to light mode"}
+			aria-label={
+				isLightTheme ? "Switch to dark mode" : "Switch to light mode"
+			}
+			title={
+				isLightTheme ? "Switch to dark mode" : "Switch to light mode"
+			}
 		>
 			<span aria-hidden="true">{isLightTheme ? "🌙" : "☀️"}</span>
 		</button>

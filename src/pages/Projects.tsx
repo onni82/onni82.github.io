@@ -44,8 +44,11 @@ const Projects: React.FC = () => {
 	useEffect(() => {
 		const fetchRepos = async () => {
 			try {
-				const response = await fetch(`https://pinned.berrysauce.dev/get/${username}`); //https://api.github.com/users/${username}/repos
-				if (!response.ok) throw new Error("Failed to fetch repositories");
+				const response = await fetch(
+					`https://pinned.berrysauce.dev/get/${username}`,
+				); //https://api.github.com/users/${username}/repos
+				if (!response.ok)
+					throw new Error("Failed to fetch repositories");
 
 				const data = await response.json();
 				setRepos(data);
@@ -86,7 +89,11 @@ const Projects: React.FC = () => {
 									/>
 									{repo.language || "Unknown language"}
 								</p>
-								<p>{repo.description || "No description available"}.</p>
+								<p>
+									{repo.description ||
+										"No description available"}
+									.
+								</p>
 							</section>
 						</a>
 					);

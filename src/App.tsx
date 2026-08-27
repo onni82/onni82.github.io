@@ -25,7 +25,10 @@ const App: React.FC = () => {
 						: header instanceof HTMLElement
 							? header.offsetHeight + 8
 							: 0;
-				const top = target.getBoundingClientRect().top + window.scrollY - fixedHeaderOffset;
+				const top =
+					target.getBoundingClientRect().top +
+					window.scrollY -
+					fixedHeaderOffset;
 
 				window.scrollTo({ top, behavior: "smooth" });
 			}
@@ -56,7 +59,11 @@ const App: React.FC = () => {
 
 	return (
 		<>
-			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} menuClose={menuClose} />
+			<Header
+				menuOpen={menuOpen}
+				setMenuOpen={setMenuOpen}
+				menuClose={menuClose}
+			/>
 			<main>
 				<section id="home" className="page-anchor">
 					<Home />

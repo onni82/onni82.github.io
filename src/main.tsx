@@ -10,5 +10,5 @@ createRoot(document.getElementById("box-content")!).render(
 		<ThemeProvider>
 			<App />
 		</ThemeProvider>
-	</StrictMode>
+	</StrictMode>,
 );

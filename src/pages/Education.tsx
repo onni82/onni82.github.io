@@ -9,7 +9,9 @@ const Education: React.FC = () => {
 				{data.education.map((edu) => (
 					<section key={edu.id}>
 						<p className="sub-category">{edu.school}</p>
-						<p>{edu.period} - {edu.schoolType} - {edu.course}</p>
+						<p>
+							{edu.period} - {edu.schoolType} - {edu.course}
+						</p>
 						<p>{edu.location}</p>
 					</section>
 				))}
