@@ -150,12 +150,30 @@
 		{
 			"id": 1,
 			"sub_category": "Programming",
-			"description": ["C#", "C++", "HTML", "CSS", "JavaScript", "TypeScript", "Node.js", "React", "SQL"]
+			"description": [
+				"C#",
+				"C++",
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"TypeScript",
+				"Node.js",
+				"React",
+				"SQL"
+			]
 		},
 		{
 			"id": 2,
 			"sub_category": "Media",
-			"description": ["Music writing", "Lyric writing", "Audio engineering", "Music production"]
+			"description": [
+				"Music Writing",
+				"Lyric Writing",
+				"Music Production & Composition",
+				"Audio Engineering",
+				"Audio Production & Sound Design",
+				"Video Editing",
+				"Creative & Digital Content Production"
+			]
 		}
 	],
 	"languages": [
@@ -184,17 +202,31 @@
 		{
 			"id": 2,
 			"sub_category": "Code Editors/IDE",
-			"description": ["Visual Studio", "Visual Studio Code", "Sublime Text", "Code::Blocks", "Eclipse"]
+			"description": [
+				"Visual Studio",
+				"Visual Studio Code",
+				"Sublime Text",
+				"Code::Blocks",
+				"Eclipse"
+			]
 		},
 		{
 			"id": 3,
 			"sub_category": "Digital Audio Workstations",
-			"description": ["Avid Pro Tools", "Image-Line FL Studio", "Apple Logic Pro"]
+			"description": [
+				"Avid Pro Tools (Certified User v. 12.8 and 2020)",
+				"Image-Line FL Studio",
+				"Apple Logic Pro"
+			]
 		},
 		{
 			"id": 4,
 			"sub_category": "Video Editing Software",
-			"description": ["Adobe Premiere Pro", "Avid Media Composer", "Apple Final Cut Pro"]
+			"description": [
+				"Adobe Premiere Pro",
+				"Avid Media Composer",
+				"Apple Final Cut Pro"
+			]
 		}
 	]
 }
