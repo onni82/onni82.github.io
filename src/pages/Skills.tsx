@@ -44,7 +44,7 @@ const Skills: React.FC = () => {
 				{data.tools.map((tool) => (
 					<section key={tool.id}>
 						<p className="sub-category">{tool.sub_category}</p>
-						<div className="tool-list">
+						<div className="skill-chip-list">
 							{tool.description.map((item, index) => (
 								<div
 									key={`${tool.id}-${index}`}
